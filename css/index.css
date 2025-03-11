@@ -122,9 +122,9 @@ form{
     color: black;
 }
 
-.contact{
+/* .contact{
     margin-left: -160px;
-}
+} */
 
 /* .img-quem-sou{
     width: 100%;
@@ -174,14 +174,13 @@ footer a {
     }
 }
 
-.botao-topo{
-    margin-top: -160px;
-}
+/* .botao-topo{
+    margin-top: -150px;
+} */
 
 .botao-topo img{
     opacity: 1;
     animation: fade-out 0s;
-    margin-top: 0px;
 }
 
 .botao-topo-mostar img{
@@ -190,4 +189,18 @@ footer a {
 
 .botao-topo-escondido img{
     animation: fade-out 1s ease-out forwards;
+}
+
+@media screen and (max-width:599px){
+    .botao-topo {
+        margin-top: -140px;
+
+    }  
+}
+
+@media screen and (min-width:600px){
+    .botao-topo {
+        margin-top: -150px;
+
+    }  
 }
