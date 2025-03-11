@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+}
+
+body{
+    /* height: 4000px; */
+    cursor: url('../img/mouse.png'), auto;
+    background-color: rgb(75, 74, 74);
+}
+
+
+header img{ /*altgr para abrir chavetas e o ctrl+~ é para fazer comentario da linha inteira */
+    width: 160px; /*largura imagem logotipo se for em px nao se auto ajusta se for % ajusta-se ao tamanho da janela */
+    border-radius: 20px; /*isto é para arredondar os cantos da imagem//podemos usar % ou px para arredondar*/
+    box-shadow: 5px 10px 15px black; /*colocar sombreado na imagem*/
+    margin-top: 10px; /*Puxar imagem para baixo*/
+    margin-bottom: 10px; /*Dar margem cabeçalho parte de baixo*/
+}
+
+header {
+    text-align: center; /*centra todo conteudo*/
+    background-color: rgb(75, 74, 74); /*mudar cor fundo página*/
+    background: linear-gradient(to right, rgb(37, 37, 37) 0%, rgb(118, 121, 126) 50%, rgb(37, 37, 37) 100%); /* isto é para por fade no fundo*/
+}
+
+header h1,
+header h3
+{
+    color: rgb(236, 240, 247); /*cor titulo e subtitulo, para mudar para cores diferentes temos de criar 2 vezes o cógido ex: hearder h3 {color}*/
+    font-family: "Roboto Mono", serif;
+    font-optical-sizing: auto;
+    font-weight: 200; /*font-weight: <weight> temos de apagar o <weight> e colocar os valores fornecidos pelo google*/
+    font-style: italic;  /*aqui temos de escolher o tipo de fonte*/
+    /*estes 4 códigos são importados do css do google fontes automático*/
+}
+
+header h1{
+    font-size: 34px; /* isto é para definir o tamanho da fonte*/
+    text-shadow: 14px 10px 10px black; /*colocar sombra nas letras*/
+    margin-top: 40px; /*Puxar Letras para baixo*/
+}
+
+header h3{
+    font-size: 18px; /* isto é para definir o tamanho da fonte*/
+}
+
+/* . para chamar class*/
+.redessociais{
+Width: 28px;
+border-radius: 10px;
+margin-top: 40px;
+}
+
+header a{
+    text-decoration: none; /* é para sair o sublinhado dos links*/
+}
+
+.navbar{
+    background: linear-gradient(to right,  rgb(37, 37, 37) 0%, rgb(118, 121, 126) 50%, rgb(37, 37, 37) 100%);
+    opacity: 0.8;
+}
+
+.nav-link{
+    margin-left: 20px;
+    width: 200px;
+    color: white;
+    text-align: center;
+}
+
+.loja{
+  background-color: transparent;
+}
+
+
+.carousel-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+
+.carousel {
+  max-width: 522px;
+  max-height: 322px;
+  width: auto;
+  height: auto;
+  margin: auto;
+  text-align: center;
+}
+
+
+.carousel img {
+    filter: grayscale(100%); /* Imagem começa preto e branco */
+    transition: filter 0.5s ease-in-out; /* Transição suave */
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel:hover img {
+    filter: grayscale(0%); /* Ao passar o mouse, volta a cor original */
+    transform: scale(1.1);
+}
+
+.btn-dark:hover{
+    transform: scale(1.05);
+}
+
+
+@keyframes fade-in{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes fade-out{
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+.botao-topo{
+    margin-top: 360px;
+}
+
+.botao-topo img{
+    opacity: 1;
+    animation: fade-out 0s;
+    margin-top: 0px;
+}
+
+.botao-topo-mostar img{
+    animation: fade-in 1s ease-in forwards;
+}
+
+.botao-topo-escondido img{
+    animation: fade-out 1s ease-out forwards;
+}
