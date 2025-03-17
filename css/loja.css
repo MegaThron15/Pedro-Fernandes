@@ -87,7 +87,7 @@ header a{
 .carousel {
   max-width: 522px;
   max-height: 322px;
-  width: auto;
+  width: 100%;
   height: auto;
   margin: auto;
   text-align: center;
