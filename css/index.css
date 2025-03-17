@@ -120,6 +120,8 @@ header a{
 
 form{
     color: black;
+    max-width: 1000px; /* Mantém a responsividade */
+    margin-left: 120px;
 }
 
 /* .contact{
@@ -191,12 +193,6 @@ footer a {
     animation: fade-out 1s ease-out forwards;
 }
 
-form{
-    width: 1000px !important; /* Define um tamanho fixo e prioriza a regra */
-    max-width: 100%; /* Mantém a responsividade */
-    margin-left: 120px;
-}
-
 @media screen and (max-width:599px){
     .botao-topo {
         margin-top: -140px;
@@ -209,4 +205,13 @@ form{
         margin-top: -150px;
 
     }  
+}
+
+
+@media screen and (max-width: 600px) {
+    form {
+        max-width: 90%;
+        margin: auto;
+        padding: 10px;
+    }
 }
