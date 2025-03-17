@@ -191,6 +191,12 @@ footer a {
     animation: fade-out 1s ease-out forwards;
 }
 
+form{
+    width: 1000px !important; /* Define um tamanho fixo e prioriza a regra */
+    max-width: 100%; /* Mantém a responsividade */
+    margin-left: 120px;
+}
+
 @media screen and (max-width:599px){
     .botao-topo {
         margin-top: -140px;
